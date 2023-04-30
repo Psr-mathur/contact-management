@@ -65,7 +65,7 @@ const Dashboard = () => {
 
 
 	return (
-		<div className=" container brdr" >
+		<div className=" container brdr mt-3 pt-5" >
 			<p className="h1 d-flex justify-content-center">Corona Cases Chart</p>
 			<div className="brdr-gray p-1" >
 
@@ -76,16 +76,16 @@ const Dashboard = () => {
 
 			</div>
 			<p className="h1 d-flex justify-content-center">Corona Cases World Map</p>
-			<div className="brdr" id="map">
+			<div className="brdr container" id="">
 				<MapContainer
-					className=""
-					bounds={[[-60, -180], [85, 180]]} zoom={2}
-					center={[20, 40]}
+					center={[25.59, 85.13]}
+					zoom={4}
 					scrollWheelZoom={true}
+					className=""
 				>
 					<TileLayer
+						attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 						url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-						attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 					/>
 					<WorldMap countriesData={countriesData} />
 				</MapContainer>
