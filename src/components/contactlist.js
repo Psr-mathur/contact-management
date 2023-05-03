@@ -23,8 +23,8 @@ const Contacts = () => {
 
     }, [dispatch, AllContacts.length])
     return (
-        <div className=" d-flex flex-column justify-content-center align-items-center mt-4">
-            <div className=" container mt-5 mb-2 d-flex justify-content-center">
+        <div className=" d-flex flex-column justify-content-center align-items-center">
+            <div className=" container mb-2 d-flex justify-content-center">
                 <Link to="/contact_form">
                     <button className="btn btn-outline-primary">
                         Create Contact

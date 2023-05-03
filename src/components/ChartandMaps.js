@@ -65,7 +65,7 @@ const Dashboard = () => {
 
 
 	return (
-		<div className=" container brdr mt-3 pt-5" >
+		<div className=" container brdr" >
 			<p className="h1 d-flex justify-content-center">Corona Cases Chart</p>
 			<div className="brdr-gray p-1" >
 
